@@ -136,6 +136,7 @@ nav a{
 
 .apresentacao h3,
 .frase h3,
+
 .frase{
 
     border-bottom:2px solid #1F4E79;
@@ -144,6 +145,7 @@ nav a{
 
     margin-bottom:30px;
 }
+
 .foco h3{
     color:#FF7F50;
     margin-bottom:20px;
@@ -173,6 +175,7 @@ nav a{
 .apresentacao span{
     color:#FF7F50;
 }
+
 
 .apresentacao h4{
     margin:15px 0 30px;
