@@ -86,9 +86,11 @@ nav a{
 }
 
 .titulo-principal h2{
-    font-size:6rem;
+    font-size:7rem;
     line-height:0.9;
     color:#1F4E79;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 .titulo-principal p{
@@ -119,19 +121,11 @@ nav a{
     padding:40px 60px;
 }
 .jornal{
-
     display:grid;
-
-    grid-template-columns:
-    1fr
-    1.2fr
-    0.8fr;
-
-    gap:30px;
-
-    padding:40px;
-
-    border:3px solid #1F4E79;
+    grid-template-columns:1fr 1.2fr 0.8fr;
+    gap:35px;
+    padding:35px;
+    border:2px solid #1F4E79;
 }
 
 .apresentacao h3,
@@ -166,11 +160,15 @@ nav a{
     font-size:3rem;
     color:#1F4E79;
 }
-.foco {
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 50px;
+.foco{
+    text-align:center;
+    margin-top:50px;
+}
+
+.foco h3{
+    color:#FF7F50;
+    font-size:2rem;
+    margin-bottom:15px;
 }
 .apresentacao span{
     color:#FF7F50;
@@ -188,30 +186,29 @@ nav a{
     line-height:1.8;
 }
 .apresentacao{
-
-    border-right:2px solid #1F4E79;
-
+    border-right:2px dotted #1F4E79;
     padding-right:30px;
 }
 
+.foto{
+    border-right:2px dotted #1F4E79;
+    padding-right:30px;
+}
 .botao{
     display:inline-block;
-
     margin-top:20px;
-
     background:#FF7F50;
     color:white;
-
     text-decoration:none;
-
-    padding:15px 25px;
-
-    border-radius:40px;
+    padding:12px 22px;
+    border:2px solid #FF7F50;
+    border-radius:0;
+    font-weight:bold;
 }
 
 .foto img{
     width:100%;
-    border-radius:15px;
+    border:2px solid #1F4E79;
 }
 
 .frase blockquote{
@@ -235,17 +232,18 @@ footer{
     padding:30px;
 }
 main{
-
-    max-width:1300px;
-
+    max-width:1400px;
     margin:30px auto;
-
     background:white;
-
-    border:4px solid #1F4E89;
-
-    padding:30px;
-
-    box-shadow:
-    0 0 20px rgba(0,0,0,0.08);
+    border:5px double #1F4E79;
+    padding:40px;
+    box-shadow:0 0 20px rgba(0,0,0,0.08);
+}
+.apresentacao h3,
+.frase h3{
+    color:#1F4E79;
+    font-size:1.1rem;
+    border-bottom:2px solid #1F4E79;
+    padding-bottom:15px;
+    margin-bottom:25px;
 }
