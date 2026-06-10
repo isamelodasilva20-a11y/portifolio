@@ -164,7 +164,12 @@ nav a{
     font-size:3rem;
     color:#1F4E79;
 }
-
+.foco {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+}
 .apresentacao span{
     color:#FF7F50;
 }
