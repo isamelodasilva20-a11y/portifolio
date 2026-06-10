@@ -1,152 +1,340 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+/* ===== PÁGINA SOBRE ===== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body{
+    background:red !important;
+}
+.sobre-page{
 
-    <title>Sobre Mim | Isabela Melo</title>
+    max-width:1500px;
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sobre.css">
-</head>
+    margin:30px auto;
 
-<body>
+    background:white;
 
-    <header>
+    border:4px solid #1F4E79;
 
-        <div class="topo">
+    padding:30px;
 
-            <h1>
-                Portfólio
-                <span>Isabela Melo</span>
-            </h1>
+    box-shadow:0 0 20px rgba(0,0,0,0.08);
+}
 
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="sobre.html">Sobre mim</a>
-                <a href="projetos.html">Projetos</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+/* ===== ESTRUTURA ===== */
 
-        </div>
+.sobre-container{
 
-        <div class="linha"></div>
+    display:grid;
 
-        <div class="edicao">
+    grid-template-columns:280px 1fr;
 
-            <p>EDIÇÃO 01</p>
+    gap:35px;
 
-            <p>BEM-VINDA(O)</p>
+    border:2px solid #1F4E79;
 
-            <p>
-                JUNHO • 2026 •
-                <span id="relogio"></span>
-            </p>
+    padding:25px;
+}
 
-        </div>
+/* ===== COLUNA ESQUERDA ===== */
 
-    </header>
+.perfil-lateral{
 
-    <main class="sobre-page">
+    border-right:2px dotted #1F4E79;
 
-        <section class="sobre-container">
+    padding-right:25px;
+}
 
-            <aside class="perfil-lateral">
+.perfil-lateral h3{
 
-                <h3>PERFIL</h3>
+    text-align:center;
 
-                <img src="imagens/WhatsApp Image 2026-06-10 at 01.25.39.jpeg"
-                     alt="Foto de Isabela Melo">
+    color:#FF7F50;
 
-                <div class="contato">
+    margin-bottom:15px;
 
-                    <h3>CONTATO</h3>
+    font-size:1.3rem;
+}
 
-                    <p>
-                        <strong>LinkedIn</strong><br>
-                        www.linkedin.com/in/isabela-melo-da-silva-a0b6713b4
-                    </p>
+.perfil-lateral img{
 
-                    <p>
-                        <strong>Email</strong><br>
-                        isabelamelodasilva2007@gmail.com
-                    </p>
+    width:100%;
 
-                    <p>
-                        <strong>GitHub</strong><br>
-                        github.com/isamelodasilva20-a11y
-                    </p>
+    border:2px solid #1F4E79;
 
-                </div>
+    margin-bottom:25px;
+}
 
-            </aside>
+.contato{
 
-            <section class="sobre-conteudo">
+    margin-top:20px;
+}
 
-                <p class="secao">SOBRE MIM</p>
+.contato p{
 
-                <h1>
-                    CONSTRUINDO HOJE <br>
-                    O FUTURO DE AMANHÃ
-                </h1>
+    padding-bottom:15px;
 
-                <div class="linha-decorativa"></div>
+    margin-bottom:15px;
 
-                <blockquote>
+    border-bottom:1px dashed #1F4E79;
 
-                    A área de TI chamou a minha atenção pela sua influência
-                    no mundo, conectando e evoluindo as pessoas e suas
-                    inovações. Quero participar desse futuro incentivando
-                    a tecnologia a alcançar os patamares mais altos.
+    line-height:1.7;
 
-                    Iniciar a graduação em Ciência da Computação vai abrir
-                    muitas portas para eu contribuir para esse avanço 🚀.
+    font-size:0.95rem;
+}
 
-                </blockquote>
+/* ===== CONTEÚDO ===== */
 
-                <div class="habilidades-grid">
+.sobre-conteudo{
 
-                    <div class="card-jornal">
+    padding-left:10px;
+}
 
-                        <h2>SOFT SKILLS</h2>
+.secao{
 
-                        <ul>
-                            <li>Comunicação</li>
-                            <li>Cooperação</li>
-                            <li>Adaptabilidade</li>
-                            <li>Resolução de Problemas</li>
-                        </ul>
+    text-align:center;
 
-                    </div>
+    color:#FF7F50;
 
-                    <div class="card-jornal">
+    font-weight:bold;
 
-                        <h2>TECH STACK</h2>
+    letter-spacing:2px;
 
-                        <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>C++</li>
-                            <li>HTML</li>
-                            <li>Arduino</li>
-                        </ul>
+    margin-bottom:15px;
+}
 
-                    </div>
+/* ===== TÍTULO ===== */
 
-                </div>
+.sobre-conteudo h1{
 
-            </section>
+    text-align:center;
 
-        </section>
+    color:#1F4E79;
 
-    </main>
+    font-size:6rem;
 
-    <footer>
-        <p>© 2026 - Isabela Melo</p>
-    </footer>
+    line-height:0.9;
 
-    <script src="js/script.js"></script>
+    margin-bottom:20px;
+}
 
-</body>
-</html>
+/* ===== LINHAS COM ESTRELA ===== */
+
+.ornamento{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.ornamento::before,
+.ornamento::after{
+
+    content:"";
+
+    flex:1;
+
+    height:2px;
+
+    background:#1F4E79;
+}
+
+.ornamento span{
+
+    margin:0 20px;
+
+    color:#1F4E79;
+
+    font-size:2rem;
+}
+
+/* ===== TEXTO PRINCIPAL ===== */
+
+blockquote{
+
+    position:relative;
+
+    color:#1F4E79;
+
+    font-size:2rem;
+
+    line-height:1.8;
+
+    padding:40px 70px;
+
+    border-top:2px solid #1F4E79;
+
+    border-bottom:2px solid #1F4E79;
+
+    margin-bottom:35px;
+}
+
+blockquote::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    left:15px;
+
+    top:-10px;
+
+    font-size:6rem;
+
+    color:#1F4E79;
+}
+
+blockquote::after{
+
+    content:"❞";
+
+    position:absolute;
+
+    right:15px;
+
+    bottom:-40px;
+
+    font-size:6rem;
+
+    color:#1F4E79;
+}
+
+/* ===== CARDS ===== */
+
+.habilidades-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+}
+
+.card-jornal{
+
+    background:white;
+
+    border:3px solid #1F4E79;
+
+    border-radius:15px;
+
+    padding:25px;
+}
+
+.card-jornal h2{
+
+    text-align:center;
+
+    color:#FF7F50;
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+}
+
+/* ===== LISTAS ===== */
+
+.card-jornal ul{
+
+    list-style:none;
+}
+
+.card-jornal li{
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+    border:1px solid #1F4E79;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    color:#1F4E79;
+
+    transition:0.3s;
+}
+
+.card-jornal li:hover{
+
+    background:#1F4E79;
+
+    color:white;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:1000px){
+
+    .sobre-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .perfil-lateral{
+
+        border-right:none;
+
+        border-bottom:2px solid #1F4E79;
+
+        padding-right:0;
+
+        padding-bottom:30px;
+    }
+
+    .habilidades-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .sobre-conteudo h1{
+
+        font-size:4rem;
+    }
+
+    blockquote{
+
+        font-size:1.4rem;
+    }
+    /* FORÇA TAMANHOS */
+
+.sobre-page{
+    max-width: 1300px !important;
+    width: 95% !important;
+}
+
+.sobre-container{
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 320px 1fr !important;
+}
+
+.sobre-conteudo h1{
+    font-size: 85px !important;
+    line-height: 0.9 !important;
+}
+
+blockquote{
+    font-size: 22px !important;
+    line-height: 1.8 !important;
+}
+
+.card-jornal h2{
+    font-size: 40px !important;
+}
+
+.card-jornal li{
+    font-size: 20px !important;
+    padding: 18px !important;
+}
+
+.contato p{
+    font-size: 16px !important;
+}
+.sobre-conteudo h1{
+    color:red !important;
+    font-size:120px !important;
+}
+}
