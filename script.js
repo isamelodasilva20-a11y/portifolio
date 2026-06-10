@@ -1,24 +1,30 @@
-function atualizarRelogio() {
+function atualizarDataHora() {
 
     const agora = new Date();
 
-    const horas = String(
-        agora.getHours()
-    ).padStart(2, '0');
+    const opcoes = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    };
 
-    const minutos = String(
-        agora.getMinutes()
-    ).padStart(2, '0');
+    const data =
+        agora.toLocaleDateString(
+            'pt-BR',
+            opcoes
+        );
 
-    const segundos = String(
-        agora.getSeconds()
-    ).padStart(2, '0');
+    const hora =
+        agora.toLocaleTimeString(
+            'pt-BR'
+        );
 
     document.getElementById("relogio")
         .textContent =
-        `${horas}:${minutos}:${segundos}`;
+        `${data} • ${hora}`;
 }
 
-setInterval(atualizarRelogio, 1000);
+setInterval(atualizarDataHora, 1000);
 
-atualizarRelogio();
+atualizarDataHora();
