@@ -1,1 +1,298 @@
+/* ===== PÁGINA SOBRE ===== */
 
+.sobre-page{
+
+    max-width:1500px;
+
+    margin:30px auto;
+
+    background:white;
+
+    border:4px solid #1F4E79;
+
+    padding:30px;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.08);
+}
+
+/* ===== ESTRUTURA ===== */
+
+.sobre-container{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:35px;
+
+    border:2px solid #1F4E79;
+
+    padding:25px;
+}
+
+/* ===== COLUNA ESQUERDA ===== */
+
+.perfil-lateral{
+
+    border-right:2px dotted #1F4E79;
+
+    padding-right:25px;
+}
+
+.perfil-lateral h3{
+
+    text-align:center;
+
+    color:#FF7F50;
+
+    margin-bottom:15px;
+
+    font-size:1.3rem;
+}
+
+.perfil-lateral img{
+
+    width:100%;
+
+    border:2px solid #1F4E79;
+
+    margin-bottom:25px;
+}
+
+.contato{
+
+    margin-top:20px;
+}
+
+.contato p{
+
+    padding-bottom:15px;
+
+    margin-bottom:15px;
+
+    border-bottom:1px dashed #1F4E79;
+
+    line-height:1.7;
+
+    font-size:0.95rem;
+}
+
+/* ===== CONTEÚDO ===== */
+
+.sobre-conteudo{
+
+    padding-left:10px;
+}
+
+.secao{
+
+    text-align:center;
+
+    color:#FF7F50;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+/* ===== TÍTULO ===== */
+
+.sobre-conteudo h1{
+
+    text-align:center;
+
+    color:#1F4E79;
+
+    font-size:6rem;
+
+    line-height:0.9;
+
+    margin-bottom:20px;
+}
+
+/* ===== LINHAS COM ESTRELA ===== */
+
+.ornamento{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.ornamento::before,
+.ornamento::after{
+
+    content:"";
+
+    flex:1;
+
+    height:2px;
+
+    background:#1F4E79;
+}
+
+.ornamento span{
+
+    margin:0 20px;
+
+    color:#1F4E79;
+
+    font-size:2rem;
+}
+
+/* ===== TEXTO PRINCIPAL ===== */
+
+blockquote{
+
+    position:relative;
+
+    color:#1F4E79;
+
+    font-size:2rem;
+
+    line-height:1.8;
+
+    padding:40px 70px;
+
+    border-top:2px solid #1F4E79;
+
+    border-bottom:2px solid #1F4E79;
+
+    margin-bottom:35px;
+}
+
+blockquote::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    left:15px;
+
+    top:-10px;
+
+    font-size:6rem;
+
+    color:#1F4E79;
+}
+
+blockquote::after{
+
+    content:"❞";
+
+    position:absolute;
+
+    right:15px;
+
+    bottom:-40px;
+
+    font-size:6rem;
+
+    color:#1F4E79;
+}
+
+/* ===== CARDS ===== */
+
+.habilidades-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+}
+
+.card-jornal{
+
+    background:white;
+
+    border:3px solid #1F4E79;
+
+    border-radius:15px;
+
+    padding:25px;
+}
+
+.card-jornal h2{
+
+    text-align:center;
+
+    color:#FF7F50;
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+}
+
+/* ===== LISTAS ===== */
+
+.card-jornal ul{
+
+    list-style:none;
+}
+
+.card-jornal li{
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+    border:1px solid #1F4E79;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    color:#1F4E79;
+
+    transition:0.3s;
+}
+
+.card-jornal li:hover{
+
+    background:#1F4E79;
+
+    color:white;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:1000px){
+
+    .sobre-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .perfil-lateral{
+
+        border-right:none;
+
+        border-bottom:2px solid #1F4E79;
+
+        padding-right:0;
+
+        padding-bottom:30px;
+    }
+
+    .habilidades-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .sobre-conteudo h1{
+
+        font-size:4rem;
+    }
+
+    blockquote{
+
+        font-size:1.4rem;
+    }
+}
