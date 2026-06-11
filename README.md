@@ -6,9 +6,8 @@ Este projeto foi desenvolvido como atividade da disciplina de Introdução a Com
 
 ## Funcionalidades
 
-* Página inicial.
-* Página de projetos.
 * Navegação entre páginas utilizando links.
+* uso de diferentes tags no html e no css
 * Layout responsivo desenvolvido com Flexbox.
 * Recurso em JavaScript utilizado para mostrar o horário em tempo real.
 
