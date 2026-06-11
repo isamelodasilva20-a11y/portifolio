@@ -23,7 +23,7 @@ Este projeto foi desenvolvido como atividade da disciplina de Introdução a Com
 * projetos.html – Página de projetos e certificados.
 * sobre.html - Página descrevendo sobre mim
 * css/style.css – Estilos do site.
-* js/script.js – Função do horário.
+* js/script.js – Função do javaS para horário.
 
 
 ## Como Acessar
