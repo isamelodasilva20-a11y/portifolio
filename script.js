@@ -1,30 +1,23 @@
 function atualizarDataHora() {
 
+    const elemento = document.getElementById("relogio");
+
+    if (!elemento) return;
+
     const agora = new Date();
 
     const opcoes = {
-        weekday: 'long',
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
     };
 
-    const data =
-        agora.toLocaleDateString(
-            'pt-BR',
-            opcoes
-        );
+    const data = agora.toLocaleDateString("pt-BR", opcoes);
+    const hora = agora.toLocaleTimeString("pt-BR");
 
-    const hora =
-        agora.toLocaleTimeString(
-            'pt-BR'
-        );
-
-    document.getElementById("relogio")
-        .textContent =
-        `${data} • ${hora}`;
+    elemento.textContent = `${data} • ${hora}`;
 }
 
-setInterval(atualizarDataHora, 1000);
-
 atualizarDataHora();
+setInterval(atualizarDataHora, 1000);
